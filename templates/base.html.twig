@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+
+        <title>{% block title %}Hello World!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('tinycircleslider')}}">
+        <link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('style.css')}}">
+        <script src="{{ asset('https://canvasjs.com/assets/script/canvasjs.min.js')}}"></script>
+        <link rel="stylesheet" href="{{ asset('anim.js')}}">
+
+
+    </head>
+    <body>
+        {% block header %}{% endblock %}
+        {% block body %} {% endblock %}
+        {% block javascripts %} <script defer src="{{ asset('https://use.fontawesome.com/releases/v5.0.7/js/all.js')}}"></script>{% endblock %}
+        {% block footer %}{% endblock %}
+    </body>
+</html>
